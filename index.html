@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Time Sheet</title>
 </head>
+<style>
+    .jumbotron {
+        margin-right:150px;
+        margin-left:150px;
+        background-color:Black;
+        color:white;
+        border-radius:20px;
+    }
+    .display-4 {
+        text-align:center;
+    }
+    .lead {
+        text-align: center;
+    }
+    .form-group {
+        margin-right:170px;
+        margin-left:175px;
+    }
+    .container-fluid {
+        width:78%;
+        
+    }
+
+</style>
 <body>
-    
+    <div class="jumbotron">
+        <h1 class="display-4">Employee Data Managment</h1>
+        <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+        <hr class="my-4">
+        <p></p>
+    </div>
+    <div class="container-fluid">
+    <table class="w3-table w3-striped w3-border">
+        <thead>
+            <tr>
+            <th scope="col">Employee Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">Months Worked</th>
+            <th scope="col">Monthly Rate($)</th>
+            <th scope="col">Total Billed($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Mark</td>
+            <td>Developer</td>
+            <td>01-01-18</td>
+            </tr>
+            <tr>
+            <td>Jacob</td>
+            <td>Manager</td>
+            <td>02-04-18</td>
+            </tr>
+            <tr>
+            <td>Larry</td>
+            <td>Coder</td>
+            <td>05-06-18</td>
+            <tr>
+            <td>Jeffery</td>
+            <td>Janitor</td>
+            <td>06-06-18</td>    
+            </tr>
+
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+    </form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>   
 </body>
 </html>
