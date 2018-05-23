@@ -24,11 +24,21 @@
     }
     .form-group {
         margin-right:170px;
-        margin-left:175px;
     }
     .container-fluid {
         width:78%;
         
+    }
+    .container1 {
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        margin-right:155px;
+        margin-left:155px;
+        padding:20px;
+        border-width:2px;
+
     }
 
 </style>
@@ -56,40 +66,55 @@
             <td>Mark</td>
             <td>Developer</td>
             <td>01-01-18</td>
+            <td>5</td>
+            <td>350</td>
+            <td>700</td>
             </tr>
             <tr>
             <td>Jacob</td>
             <td>Manager</td>
             <td>02-04-18</td>
+            <td>8</td>
+            <td>250</td>
+            <td>500</td>
             </tr>
             <tr>
             <td>Larry</td>
             <td>Coder</td>
             <td>05-06-18</td>
+            <td>10</td>
+            <td>100</td>
+            <td>300</td>
             <tr>
             <td>Jeffery</td>
             <td>Janitor</td>
-            <td>06-06-18</td>    
+            <td>06-06-18</td>   
+            <td>5</td>
+            <td>200</td>
+            <td>450</td> 
             </tr>
 
             </tr>
         </tbody>
     </table>
     </div>
+    <br>
     <form>
+        <div class="container1">
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="employee1">Employee Name</label>
+            <input type="name" class="form-control" id="employeeName-input" aria-describedby="emailHelp" placeholder="Enter Name">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="role1">Role</label>
+            <input type="password" class="form-control" id="role-input" placeholder="Role">
+        <div class="form-group">
+
         </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
+        </div>
+        </div>
+        <button id="submit"
     </form>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
