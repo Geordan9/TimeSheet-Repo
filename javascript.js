@@ -16,30 +16,39 @@ $(document).ready(function () {
     var employee = {
         name:"",
         role:"",
-        date:"",
-        totalBilled:0
+        startDate:"",
+        monthlyRate:0
     };
 
     $("#soonToBeNsmedButton").on("click", function (event) {
         employee.name = $("#employeeNameInput").val().trim();
         employee.role = $("#employeeRoleInput").val().trim();
-        employee.date = $("#employeeDateInput").val().trim();
-        employee.totalBilled = $("#employeeTotalBilledInput").val().trim();
+        employee.startDate = $("#employeeStartDateInput").val().trim();
+        employee.monthlyRate = $("#employeeMonthlyRateInput").val().trim();
 
         database.ref().push({
-            employeeName:employee.name,
-            employeeRole:employee.role,
-            employeeStartDate: firebase.database.ServerValue.Timestamp
+            name:employee.name,
+            role:employee.role,
+            startDate: employee.startDate,
+            monthlyRate: employee.monthlyRate
         });
 
+            
+        // var tableRow = $("<tr>");
+        // var tableColumn = $("<td>");
+        // var employeeNameColumn = tableColumn.text($("#employeeNameInput").val());
 
-        var tableRow = $("<tr>");
-        var tableColumn = $("<td>");
-        var employeeNameColumn = tableColumn.text($("#employeeNameInput").val());
-
-        tableRow.append(employeeNameColumn);
-        $("#tableID > tbody").append(tableRow);
+        // tableRow.append(employeeNameColumn);
+        // $("#tableID > tbody").append(tableRow);
 
     });
 
 });
+
+database.ref().orderByChild("dateAdded").limitToLast(1).on("childAdded", function (snapshot){
+    var snapshotValue = snapshot.val();
+    console.log(snapshotValue);
+});
+function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  };
